@@ -1,0 +1,45 @@
+/* variable */
+:root {
+    --primary: #B5641A;
+    --second: #7B4A4A;
+    --third: #766E6E;
+    --fondo: #EDECE7;
+}
+
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* base styles */
+
+/* mobile style */
+
+
+/* small tablet styles */
+
+@media only screen and (min-width: 620px){
+    
+}
+
+/* large tablet */
+
+@media only screen and (min-width: 960px){
+    
+}
+
+/* desktop styles  */
+
+@media only screen and (min-width: 1200px){
+    
+}
+
+
