@@ -5,214 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./Assets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script&family=Gochi+Hand&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Row's Beer Clubt</title>
 </head>
 <body>
-    <header class="site-header grid">
-        <div class="text-container">
-            <div class="left-text">
-                <h3>The Original</h3>
-                <h1>Row's Beer Club</h1>
-            </div>
-            <div class="right-text">
-                <h4>Joing us to feel the brew</h4>
-            </div>
+    <header class="site-header">
+        <div class="left-text">
+            <h3>The Original</h3>
+            <h1>Row's Beer Club</h1>
+        </div>
+        <div class="right-text">
+            <h4>Joing us to feel the brew</h4>
         </div>
     </header>
-    <nav class="site-nav grid">
+    <div class="grid-container">
+        <nav class="site-nav grid">
             <ul class="nav-flex">
                 <li><a href="#the-beer">The Beer</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#information">Information</a></li>
                 <li><a href="#beer-club">Beer Club</a></li>
             </ul>
-    </nav>
-    <section class="main-banner grid">
-        <h2>The Finest Craft Beers</h2>
-        <div class="banner-image">
-            <img src="./Assets/images/banner/second-banner.jpg" alt="craft-beer">
-        </div>
-    </section>
-    <section class="joing grid">
-        <div class="join-container">
-            <div class="joing-text">
-                <h3>This month don’t miss the beginner gift</h3>
-                <p>Get 6pack of Row IPA</p>
+        </nav>
+       <section class="main-banner grid">
+            <h2>The Finest <br> Craft Beers</h2>
+            <div class="banner-image">
+                <img src="./Assets/images/banner/second-banner.jpg" alt="craft-beer" width="500px">
             </div>
-            <div class="join-button">
-                <button>Joing Club</button>
+        </section>
+        <section class="joing grid">
+            <div class="joing-container">
+                <div class="joing-text">
+                    <h4>This month don’t miss the beginner gift</h4>
+                    <p>Get 6pack of Row IPA</p>
+                </div>
+                <div class="join-button">
+                    <button>Joing Club</button>
+                </div>
             </div>
-        </div>
-    </section>
-    <article class="about grid">
-        <div class="about-container">
-            <p>Each monthly Craft Beer Club selection is produced by small-production, independent, 
-                artisan, craft brewers who use traditional brewing ingredients with creative techniques
-                 and time-honored brewing methods to create their brews. In each shipment we feature 2 
-                 different craft breweries - each located in different geographical regions, 4 different 
-                 craft beer styles with three beers of each style. A few times during the year we feature 
-                 cans so you can take your beer on the go.</p>
-        </div>
-    </article>
-    <section id="the-beer" class="beer-of-month grid">
-        <div class="beer-month-container">
-            <div class="beer-month">
-                <div class="beer-month-image"><img src="./Assets/images/Beer_Of_the_month/beerOfmonth1.jpg" alt="Pale ale"></div>
-                <h4>Pale Ale</h4>
-                <p>made by warm fermentation using primarily a specific variety of malt known as light malt.</p>
+        </section>
+        <article class="about grid">
+            <div class="about-container">
+                <p>Each monthly Craft Beer Club selection is produced by small-production, independent, 
+                    artisan, craft brewers who use traditional brewing ingredients with creative techniques
+                    and time-honored brewing methods to create their brews. In each shipment we feature 2 
+                    different craft breweries - each located in different geographical regions, 4 different 
+                    craft beer styles with three beers of each style. A few times during the year we feature 
+                    cans so you can take your beer on the go.</p>
             </div>
-        </div>
-        <div class="beer-month-container">
-            <div class="beer-month">
-                <div class="beer-month-image"><img src="./Assets/images/Beer_Of_the_month/beer_of_the_month2.jpg" alt="Capitan ale"></div>
-                <h4>Capitán Ale</h4>
-                <p>From Argentina, this beer is brewed with maltic seeds from a famous land. </p>
+        </article>
+        <!--  <section id="the-beer" class="beer-of-month grid">
+            <h3>Beers of the month</h3>
+            <div class="beer-month-container">
+                <div class="beer-month">
+                    <div class="beer-month-image"><img src="./Assets/images/Beer_Of_the_month/beerOfmonth1.jpg" alt="Pale ale" width="200px"></div>
+                    <h4>Pale Ale</h4>
+                    <p>made by warm fermentation using primarily a specific variety of malt known as light malt.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="club-recomended grid">
-        <div class="recomendation-container">
-            <div class="recomendation-logo"><img src="./Assets/images/recomendation/1.png" alt="verano"></div>
-            <div class="recomendation-logo"><img src="./Assets/images/recomendation/2.png" alt="el viajero nato"></div>
-            <div class="recomendation-logo"><img src="./Assets/images/recomendation/3.png" alt="berna"></div>
-            <div class="recomendation-logo"><img src="./Assets/images/recomendation/4.png" alt="the local"></div>
-            <div class="recomendation-logo"><img src="./Assets/images/recomendation/5.png" alt="reyes de laredo"></div>
-            <div class="recomendation-logo"><img src="./Assets/images/recomendation/6.png" alt="el café viejo"></div>
-        </div>
-    </section>
-    <section class="covid grid">
-        <h3> Protocols during  Covid-19 </h3>
-        <div class="covid-container">
-            <div class="covid-icon"><img src="./Assets/images/svg/1.svg" alt="wear mask"></div>
-            <div class="covid-icon"><img src="./Assets/images/svg/2.svg" alt="distance"></div>
-            <div class="covid-icon"><img src="./Assets/images/svg/3.svg" alt="hands"></div>
-        </div>
-    </section>
-    <section class="beer-offer grid">
-        <h3>Beer we Offer</h3>
-        <div class="offer-container">
-            <div class="beer">
-                <h5>Mucho Ipa</h5>
-                <img src="./Assets/images/Beers We Offer/1_Mucho_IPA.jpg" alt="mucho ipa">
-                <p>INDIAN PALE ALE</p>
-                <P>6.5 % vol.</P>
-                <p>3 BARLEY MALT</p>
+            <div class="beer-month-container">
+                <div class="beer-month">
+                    <div class="beer-month-image"><img src="./Assets/images/Beer_Of_the_month/beer_of_the_month2.jpg" alt="Capitan ale"  width="200px"></div>
+                    <h4>Capitán Ale</h4>
+                    <p>From Argentina, this beer is brewed with maltic seeds from a famous land. </p>
+                </div>
             </div>
-            <div class="beer">
-                <h5>Neipa Ipa</h5>
-                <img src="./Assets/images/Beers We Offer/2_Neipa_ipa.jpg" alt="Neipa Ipa">
-                <p>NEW INGLAND PALE ALE</p>
-                <P>4.5 % vol.</P>
+        </section>
+        <section class="club-recomended grid">
+            <div class="recomendation-container">
+                <div class="recomendation-logo"><img src="./Assets/images/recomendation/1.png" alt="verano"></div>
+                <div class="recomendation-logo"><img src="./Assets/images/recomendation/2.png" alt="el viajero nato"></div>
+                <div class="recomendation-logo"><img src="./Assets/images/recomendation/3.png" alt="berna"></div>
+                <div class="recomendation-logo"><img src="./Assets/images/recomendation/4.png" alt="the local"></div>
+                <div class="recomendation-logo"><img src="./Assets/images/recomendation/5.png" alt="reyes de laredo"></div>
+                <div class="recomendation-logo"><img src="./Assets/images/recomendation/6.png" alt="el café viejo"></div>
             </div>
-            <div class="beer">
-                <h5>Black Patron (black IPA) - Lanzarote</h5>
-                <img src="./Assets/images/Beers We Offer/3_Black_patron.jpg" alt="Black Patron">
-                <p>BLACK INDIAN PALE ALE</p>
-                <P>7.6 % vol.</P>
-                <p>4 MALT</p>
+        </section>
+        <section class="covid grid">
+            <h3> Protocols during  Covid-19 </h3>
+            <div class="covid-container">
+                <div class="covid-icon"><img src="./Assets/images/svg/1.svg" alt="wear mask"></div>
+                <div class="covid-icon"><img src="./Assets/images/svg/2.svg" alt="distance"></div>
+                <div class="covid-icon"><img src="./Assets/images/svg/3.svg" alt="hands"></div>
             </div>
-            <div class="beer">
-                <h5>Indian pale ale - Tenerife</h5>
-                <img src="./Assets/images/Beers We Offer/4_Indian_Pale_ale.jpg" alt="INDIAN PALE">
-                <p>INDIAN PALE ALE</p>
-                <P>7.6 % vol.</P>
-                <p>IBU 45</p>
+        </section>
+        <section class="beer-offer grid">
+            <h3>Beer we Offer</h3>
+            <div class="offer-container">
+                <div class="beer">
+                    <h5>Mucho Ipa</h5>
+                    <img src="./Assets/images/Beers We Offer/1_Mucho_IPA.jpg" alt="mucho ipa">
+                    <p>INDIAN PALE ALE</p>
+                    <P>6.5 % vol.</P>
+                    <p>3 BARLEY MALT</p>
+                </div>
+                <div class="beer">
+                    <h5>Neipa Ipa</h5>
+                    <img src="./Assets/images/Beers We Offer/2_Neipa_ipa.jpg" alt="Neipa Ipa">
+                    <p>NEW INGLAND PALE ALE</p>
+                    <P>4.5 % vol.</P>
+                </div>
+                <div class="beer">
+                    <h5>Black Patron (black IPA) - Lanzarote</h5>
+                    <img src="./Assets/images/Beers We Offer/3_Black_patron.jpg" alt="Black Patron">
+                    <p>BLACK INDIAN PALE ALE</p>
+                    <P>7.6 % vol.</P>
+                    <p>4 MALT</p>
+                </div>
+                <div class="beer">
+                    <h5>Indian pale ale - Tenerife</h5>
+                    <img src="./Assets/images/Beers We Offer/4_Indian_Pale_ale.jpg" alt="INDIAN PALE">
+                    <p>INDIAN PALE ALE</p>
+                    <P>7.6 % vol.</P>
+                    <p>IBU 45</p>
+                </div>
+                <div class="beer">
+                    <h5>Surf beer (canary ale) - Tenerife</h5>
+                    <img src="./Assets/images/Beers We Offer/5_Surf_beer.jpg" alt="SURF BEER">
+                    <p>PALE ALE</p>
+                    <P>4.6 % vol.</P>
+                    <p>IBU 30</p>
+                </div>
+                <div class="beer">
+                    <h5>Perenquén (APA) - Tenerife</h5>
+                    <img src="./Assets/images/Beers We Offer/6_PerenQuén.jpg" alt="PEREQUÉN">
+                    <p>AMERICAN PALE ALE</p>
+                    <P>5.6 % vol.</P>
+                    <p>IBU 55</p>
+                </div>
+                <div class="beer">
+                    <h5>Carnaval (RED) - Gran Canaria</h5>
+                    <img src="./Assets/images/Beers We Offer/7_carnaval_Red.jpg" alt="CARNAVAL">
+                    <p>AMERICAN AMBER LAGER</p>
+                    <P>5.6 % vol.</P>
+                    <p>IBU 25</p>
+                </div>
+                <div class="beer">
+                    <h5>American tuno (APA) - Gran Canaria</h5>
+                    <img src="./Assets/images/Beers We Offer/8_American Pale.jpg" alt="american pale">
+                    <p>AMERICAN PALE ALE + TUNO INDIO (RED CACTUS)MERICAN AMBER LAGER</p>
+                    <P>5.5 % vol.</P>
+                    <p>IBU 30</p>
+                </div>
+                <div class="beer">
+                    <h5>Indian pale ale - Gran Canaria</h5>
+                    <img src="./Assets/images/Beers We Offer/9_indi_gran_canaria.jpg" alt="Gran canaria">
+                    <p>INDIAN PALE</p>
+                    <P>5.7 % vol.</P>
+                    <p>IBU 35</p>
+                </div>
+                <div class="beer">
+                    <h5>Sea cloud (cloud water) - Gran Canaria</h5>
+                    <img src="./Assets/images/Beers We Offer/10_Sea_Cloud_.jpg" alt="sEA CLOUD">
+                    <p>FIRST CRAFT BEER MADE WITH SEACLOUD WATER</p>
+                    <P>5 % vol.</P>
+                    <p>IBU 20</p>
+                </div>
+                <div class="beer">
+                    <h5>Buchito (APA+wheat) - Gran Canaria</h5>
+                    <img src="./Assets/images/Beers We Offer/11_Buchito_apa.jpg" alt="BUCHITO">
+                    <p>AMARICAN WHEAT </p>
+                    <P>5.3 % vol.</P>
+                    <p>IBU 20</p>
+                </div>
+                <div class="beer">
+                    <h5>La chiflada de trigo (wheat) - Gran Canaria</h5>
+                    <img src="./Assets/images/Beers We Offer//12_Chiflada_trigo.jpg" alt="CHIFALADA">
+                    <p>WHEAT BEER</p>
+                    <P>4.5 % vol.</P>
+                    <p>IBU 10</p>
+                </div>
             </div>
-            <div class="beer">
-                <h5>Surf beer (canary ale) - Tenerife</h5>
-                <img src="./Assets/images/Beers We Offer/5_Surf_beer.jpg" alt="SURF BEER">
-                <p>PALE ALE</p>
-                <P>4.6 % vol.</P>
-                <p>IBU 30</p>
+        </section>
+        <section class="info grid">
+            <div class="info-container">
+                <div class="beer-info beer-club">
+                    <h4>Beer Club</h4>
+                    <p>Joing the club</p>
+                    <p>Give a gift</p>
+                    <p>Bonus gift</p>
+                    <p>Gift announcement cards </p>
+                </div>
+                <div class="beer-info resources">
+                    <h4>Resources</h4>
+                    <p>About the beer</p>
+                    <p>Beer styles</p>
+                    <p>Beer Grosary</p>
+                </div>
+                <div class="beer-info company">
+                    <h4>Company</h4>
+                    <p>Testimonials</p>
+                    <p>FAQs</p>
+                    <p>Affiliate progrm</p>
+                </div>
+                <div class="beer-info social">
+                    <h4>Social</h4>
+                    <a href="#"><img src="./Assets/images/svg/social/instagram.png" alt="ig"></a>
+                    <a href="#"><img src="./Assets/images/svg/social/facebook.png" alt="face"></a>
+                    <a href="#"><img src="./Assets/images/svg/social/twitter.png" alt="tw"></a>             
+                </div> -->
             </div>
-            <div class="beer">
-                <h5>Perenquén (APA) - Tenerife</h5>
-                <img src="./Assets/images/Beers We Offer/6_PerenQuén.jpg" alt="PEREQUÉN">
-                <p>AMERICAN PALE ALE</p>
-                <P>5.6 % vol.</P>
-                <p>IBU 55</p>
+        </section>
+        <footer>
+            <div class="left-text">
+                <p>policy</p>
+                <p>Site Map</p>
             </div>
-            <div class="beer">
-                <h5>Carnaval (RED) - Gran Canaria</h5>
-                <img src="./Assets/images/Beers We Offer/7_carnaval_Red.jpg" alt="CARNAVAL">
-                <p>AMERICAN AMBER LAGER</p>
-                <P>5.6 % vol.</P>
-                <p>IBU 25</p>
+            <div class="autor">
+                <p>Rowil Morán 2021</p>
             </div>
-            <div class="beer">
-                <h5>American tuno (APA) - Gran Canaria</h5>
-                <img src="./Assets/images/Beers We Offer/8_American Pale.jpg" alt="american pale">
-                <p>AMERICAN PALE ALE + TUNO INDIO (RED CACTUS)MERICAN AMBER LAGER</p>
-                <P>5.5 % vol.</P>
-                <p>IBU 30</p>
-            </div>
-            <div class="beer">
-                <h5>Indian pale ale - Gran Canaria</h5>
-                <img src="./Assets/images/Beers We Offer/9_indi_gran_canaria.jpg" alt="Gran canaria">
-                <p>INDIAN PALE</p>
-                <P>5.7 % vol.</P>
-                <p>IBU 35</p>
-            </div>
-            <div class="beer">
-                <h5>Sea cloud (cloud water) - Gran Canaria</h5>
-                <img src="./Assets/images/Beers We Offer/10_Sea_Cloud_.jpg" alt="sEA CLOUD">
-                <p>FIRST CRAFT BEER MADE WITH SEACLOUD WATER</p>
-                <P>5 % vol.</P>
-                <p>IBU 20</p>
-            </div>
-            <div class="beer">
-                <h5>Buchito (APA+wheat) - Gran Canaria</h5>
-                <img src="./Assets/images/Beers We Offer/11_Buchito_apa.jpg" alt="BUCHITO">
-                <p>AMARICAN WHEAT </p>
-                <P>5.3 % vol.</P>
-                <p>IBU 20</p>
-            </div>
-            <div class="beer">
-                <h5>La chiflada de trigo (wheat) - Gran Canaria</h5>
-                <img src="./Assets/images/Beers We Offer//12_Chiflada_trigo.jpg" alt="CHIFALADA">
-                <p>WHEAT BEER</p>
-                <P>4.5 % vol.</P>
-                <p>IBU 10</p>
-            </div>
-        </div>
-    </section>
-    <section class="info grid">
-        <div class="info-container">
-            <div class="beer-info beer-club">
-                <h4>Beer Club</h4>
-                <p>Joing the club</p>
-                <p>Give a gift</p>
-                <p>Bonus gift</p>
-                <p>Gift announcement cards </p>
-            </div>
-            <div class="beer-info resources">
-                <h4>Resources</h4>
-                <p>About the beer</p>
-                <p>Beer styles</p>
-                <p>Beer Grosary</p>
-            </div>
-            <div class="beer-info company">
-                <h4>Company</h4>
-                <p>Testimonials</p>
-                <p>FAQs</p>
-                <p>Affiliate progrm</p>
-            </div>
-            <div class="beer-info social">
-                <h4>Social</h4>
-                <a href="#"><img src="./Assets/images/svg/social/instagram.png" alt="ig"></a>
-                <a href="#"><img src="./Assets/images/svg/social/facebook.png" alt="face"></a>
-                <a href="#"><img src="./Assets/images/svg/social/twitter.png" alt="tw"></a>             
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="left-text">
-            <p>policy</p>
-            <p>Site Map</p>
-        </div>
-        <div class="autor">
-            <p>Rowil Morán 2021</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
