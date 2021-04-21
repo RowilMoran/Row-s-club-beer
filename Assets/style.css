@@ -24,6 +24,7 @@ a {
     color: inherit;
 }
 
+
 /* mobile style */
 
 header {
@@ -51,6 +52,8 @@ h1 {
     padding-bottom: 10px;
 }
 
+
+
 .left-text h3 {
     padding-top: 10px;
     padding-bottom: 0;
@@ -61,6 +64,7 @@ h1 {
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 19px;
     
 }
 
@@ -72,7 +76,8 @@ p, a, li {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(11, auto);
+    grid-auto-rows: auto;
+    /* grid-template-rows: repeat(11, auto); */
     row-gap: 10px;
 }
 
@@ -144,6 +149,229 @@ button:hover {
     color: white;
 }
 
+.about {
+    grid-area: 4 / 1 / 4 / 13;
+    text-align: justify;
+    padding: 10px 10px;
+    color: var(--third);
+    font-size: 0.8em;
+    background-color: var(--fondo);
+    margin-top: -10px;
+}
+
+.beer-of-month {
+    grid-area: 5 / 1 / 5 / 13;
+}
+
+.beer-of-month h3 {
+    color: var(--primary);
+    font-size: 1em;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.beer-month-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.beer-month {
+    width: 250px;
+    padding: 20px 0;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.beer-month h4 {
+    font-size: 0.9em;
+    color: var(--third);
+}
+
+.beer-month p {
+    font-size: 0.7em;
+    color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.beer-month-image img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 290px;
+}
+
+.club-recomended {
+    grid-area: 6 / 1 / 6 / 13;
+    background-color: var(--fondo);
+    padding: 10px 0;
+}
+
+.recomendation-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.recomendation-logo img {
+    width: 100%;
+    max-width: 135px;
+    padding: 4px 4px;
+}
+
+.club-recomended h3 {
+    color: var(--primary);
+    font-size: 1em;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.covid {
+    margin-top: -10px;
+    grid-area: 7 / 1 / 7 / 13;
+    background-color: var(--second);
+    padding: 15px 0;
+}
+
+.covid h3 {
+    padding-left: 10px;
+}
+
+.covid-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.covid-icon {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.covid-icon img {
+    
+    width: 100%;
+    max-width: 100px;
+}
+
+.beer-offer {
+    grid-area: 8 / 1 / 8 / 13;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.beer-offer h3 {
+    color: var(--primary);
+    font-size: 1em;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.offer-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.beer {
+    background-color: rgba(255, 115, 0, 0.164);
+    margin: 10px 0;
+    padding: 14px 30px;
+    text-align: center;
+    border: 0.05px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    width: 275px;
+    height: 460px;
+    max-width: 275px;
+    
+}
+
+.beer h5 {
+    padding: 5px;
+}
+
+.beer img {
+    padding-bottom: 5px;
+}
+
+.beer p {
+    font-size: 0.7em;
+    color: var(--third);
+}
+
+.info {
+    grid-area: 9 / 1 / 9 / 13;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--fondo);
+}
+
+.info-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 0;
+}
+
+.beer-club, .resources, .company, .social {
+    width: 200px;
+}
+
+.beer-info h4 {
+    font-size: 1.1em;
+    color: var(--second);
+    padding: 7px 0px;
+}
+
+.beer-info p {
+    font-size: 0.8em;
+    color: #766E6E;
+    padding: 3px 0;
+}
+
+.social img {
+    padding: 0 10px;
+}
+
+footer {
+   grid-area:  10 / 1 / 10 / 13;
+   background-color: #C4C4C4;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: -10px;
+   padding: 8px 10px;
+   color: var(--third);
+}
+
+.left-text {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.border {
+    padding: 0 10px;
+}
+
+.right {
+    border-right: 1px solid gray;
+}
 
 /* small tablet styles */
 
