@@ -32,11 +32,18 @@ header {
     url("./images/banner/banner.jpg") center / cover;  
 }
 
+.site-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 .left-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
+    padding-bottom: 8px;
 }
 
 .right-text {
@@ -48,10 +55,9 @@ h1 {
     font-family: 'Alfa Slab One', cursive;
     color: white;
     -webkit-text-stroke: 1.5px black;
-    font-size: 1em;
+    font-size: 1.5em;
     padding-bottom: 10px;
 }
-
 
 
 .left-text h3 {
@@ -60,6 +66,8 @@ h1 {
     font-family: 'Gochi Hand', cursive;
     color: white;
     font-size: 0.9em;
+    position: relative;
+    top: 8px;
 }
 
 body {
@@ -222,7 +230,7 @@ button:hover {
 
 .recomendation-logo img {
     width: 100%;
-    max-width: 135px;
+    max-width: 130px;
     padding: 4px 4px;
 }
 
@@ -360,10 +368,10 @@ footer {
    color: var(--third);
 }
 
-.left-text {
+.left-side {
     display: flex;
     flex-flow: row wrap;
-}
+} 
 
 .border {
     padding: 0 10px;
@@ -375,20 +383,131 @@ footer {
 
 /* small tablet styles */
 
-@media only screen and (min-width: 550px){
-    
+@media screen and (min-width: 550px){
+   
+    h1 {
+        font-size: 2em;
+    }
+
+    .left-text h3 {
+        position: relative;
+        top: 14px;
+    }
+
+    .main-banner h2 {
+        font-size: 3em;
+    }
+
+
 }
 
 /* large tablet */
 
-@media only screen and (min-width: 960px){
+@media screen and (min-width: 740px){
+
+    h1 {
+        font-size: 2.5em;
+    }
     
+    .main-banner h2 {
+        font-size: 3em;
+    }
+
 }
 
 /* desktop styles  */
 
-@media only screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
+
+    body {
+        font-size: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+  .site-header {
+        justify-content: space-between; 
+        height: 160px;
+        
+  }
+
+    h1 {
+        font-size: 3.2em;
+    }
+
+    .right-text {
+        display: inline-block;
+        padding-right: 20px;
+        transform: rotate(-15deg);
+        font-size: 1.5em;
+    }
+
+    .main-banner h2 {
+        font-size: 3em;
+    }
+
+    nav {
+
+        grid-area: 1 / 1 / 1 / 9;
+
+    }
+
+    .main-banner {
+        grid-area: 2 / 1 / 6 / 9 ;
+        
+
+    }
+
+    .joing {
+        grid-area: 1 / 9 / 3 / 13;
+        margin-top: 0;
+        font-size: 1.6em;
+        padding-bottom: 0;
+    }
+
+    .joing-container {
+        padding: 0;
+    }
+
+    .about {
+        margin-top: -20px;
+        grid-area: 6 / 1 / 7 / 9;
+       
+    }
+
+    .beer-of-month {
+        grid-area: 3 / 9 / 6 / 13;
+        height: 320px ;
+    }
+
+    .beer-month {
+        width: 120px;
+        padding: 0;
+    }
+
+
+    .club-recomended {
+        margin-top: 12px;
+        padding-top: 10;
+        grid-area: 5 / 9 / 8 / 13;
+    }
+
+    .covid {
+        grid-area: 8 / 9 / 10 / 13;
+    }
     
+    .beer-offer {
+        grid-area: 7 / 1 / 17 / 9;
+    }
+
+    .info {
+        grid-area: 17 / 1 / 19 / 13;
+        
+    }
+
+    footer {
+        grid-area: 19/ 1 / 20 / 13;
+    }
 }
 
 
