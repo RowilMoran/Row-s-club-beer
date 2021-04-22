@@ -24,6 +24,10 @@ a {
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 
 /* mobile style */
 
@@ -72,7 +76,7 @@ h1 {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 19px;
+    font-size: 26px;
     
 }
 
@@ -91,6 +95,16 @@ p, a, li {
 
 nav {
     grid-area: 1 / 1 / 1 / 13;
+    text-transform: uppercase;
+}
+
+ul li a{
+    padding: 5px;
+}
+
+ul li a:hover {
+    background-color: var(--primary);
+    color: white;
 }
 
 .nav-flex {
@@ -117,6 +131,7 @@ nav {
     grid-area: 3 / 1 / 3 / 13;
     margin-top: -14px;
     background-color: var(--second);
+    font-size: 1.4em;
 }
 
 .joing-container {
@@ -162,7 +177,7 @@ button:hover {
     text-align: justify;
     padding: 10px 10px;
     color: var(--third);
-    font-size: 0.8em;
+    font-size: 1em;
     background-color: var(--fondo);
     margin-top: -10px;
 }
@@ -384,6 +399,10 @@ footer {
 /* small tablet styles */
 
 @media screen and (min-width: 550px){
+
+    body {
+        font-size: 25px;
+    }
    
     h1 {
         font-size: 2em;
@@ -398,12 +417,24 @@ footer {
         font-size: 3em;
     }
 
+    .joing {
+        font-size: 1.5em;
+    }
+
+    .about {
+        font-size: 1.4em;
+    }
+
 
 }
 
 /* large tablet */
 
 @media screen and (min-width: 740px){
+
+    body{
+        font-size: 25px;
+    }
 
     h1 {
         font-size: 2.5em;
@@ -420,10 +451,14 @@ footer {
 @media screen and (min-width: 1200px){
 
     body {
-        font-size: 20px;
+        font-size: 25px;
         width: 80%;
         margin: 0 auto;
+        
+        
     }
+
+    
 
   .site-header {
         justify-content: space-between; 
@@ -432,14 +467,14 @@ footer {
   }
 
     h1 {
-        font-size: 3.2em;
+        font-size: 2.5em;
     }
 
     .right-text {
         display: inline-block;
         padding-right: 20px;
         transform: rotate(-15deg);
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .main-banner h2 {
@@ -447,7 +482,7 @@ footer {
     }
 
     nav {
-
+        font-size: 1.2em;
         grid-area: 1 / 1 / 1 / 9;
 
     }
@@ -461,7 +496,7 @@ footer {
     .joing {
         grid-area: 1 / 9 / 3 / 13;
         margin-top: 0;
-        font-size: 1.6em;
+        font-size: 1.5em;
         padding-bottom: 0;
     }
 
@@ -472,7 +507,7 @@ footer {
     .about {
         margin-top: -20px;
         grid-area: 6 / 1 / 7 / 9;
-       
+        font-size: 1em ;
     }
 
     .beer-of-month {
@@ -503,6 +538,11 @@ footer {
     .info {
         grid-area: 17 / 1 / 19 / 13;
         
+    }
+
+    .info-container {
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
 
     footer {
